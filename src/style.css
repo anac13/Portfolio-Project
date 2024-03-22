@@ -1,0 +1,20 @@
+body {
+  background: blue;
+}
+
+h1,
+h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+}
+
+h2 {
+  font-weight: 500;
+  font-style: italic;
+}
