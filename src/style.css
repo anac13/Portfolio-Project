@@ -38,7 +38,7 @@ p {
 .hero {
   background: var(--secundary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 100px 20px;
 }
 
 .hero p {
