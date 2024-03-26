@@ -153,19 +153,13 @@ p {
     padding: 0;
   }
 
-  .col-description {
-    margin: 0;
-    position: relative;
-    top: 235px;
-  }
-
   .about-section-content{
-    margin: 20px 0 ;
+    margin: 5px 0;
     padding: 10px;
   }
 
   .about-section-content h1 {
-    font-size: 40px;
+    font-size: 35px;
     margin-bottom: 0 !important;
   }
 
@@ -175,12 +169,8 @@ p {
 
   }
 
-  .col-logo {
-    position: relative;
-    top: -330px;
-  }
-
   .img-logo {
+    margin-top: 30px;
     width: 200px;
   }
 }
