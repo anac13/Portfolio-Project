@@ -97,12 +97,12 @@ p {
 }
 
 .about-section-content {
-  margin: 40px auto;
+  margin: 30px;
 }
 
 .about-section h1 {
   color: black;
-  font-size: 64px;
+  font-size: 70px;
   line-height: 80px;
 }
 
@@ -112,10 +112,11 @@ p {
 }
 
 .img-logo {
-  margin-left: 200px;
-  width:350px;
   border-radius: 50%;
   filter: drop-shadow(20px 7px 5px grey);
+  margin-top: 30x;
+  width: 450px;
+  
 }
 /*-------*/
 
@@ -154,7 +155,7 @@ p {
     padding: 0;
   }
 
-  .about-section-content{
+  .about-section-content {
     margin: 5px 0;
     padding: 10px;
   }
@@ -163,15 +164,16 @@ p {
     font-size: 35px;
     line-height: 1.2;
     margin-bottom: 5px !important;
+    
   }
 
-  .about-section-content p{
+  .about-section-content p {
     font-size: 15px;
     margin-bottom: 30px !important;
-
   }
 
   .img-logo {
+    float: none;
     margin-top: 30px;
     margin-left: 0;
     width: 200px;
