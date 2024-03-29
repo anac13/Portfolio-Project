@@ -92,7 +92,7 @@ p {
 }
 
 .content-container {
-  padding: 100px 20px;
+  padding: 60px 20px;
 }
 
 .content {
@@ -127,6 +127,14 @@ p {
   width: 450px;
 }
 
+.nav-item{
+padding: 0 50px;
+line-height: 14px;
+}
+
+.logo{
+  max-height: 80px;
+}
 @media (max-width: 900px) {
   h1 {
     font-size: 45px;
@@ -183,4 +191,7 @@ p {
     margin-left: 0;
     width: 200px;
   }
+
+ 
+  
 }
