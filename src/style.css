@@ -127,12 +127,50 @@ p {
   width: 450px;
 }
 
-.nav-item{
-padding: 0 30px;
-line-height: 14px;
+.nav-item {
+  padding: 0 30px;
+  line-height: 14px;
 }
 
-.logo{
+footer {
+  margin: 60px 0;
+}
+
+footer .skills-learned {
+  text-align: center;
+}
+
+footer .skills {
+  margin: auto 250px;
+}
+
+footer .skills .skills-icon img {
+  margin: 10px;
+  width: 50px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 24px;
+}
+
+footer .social-link a {
+  background: var(--brading-color);
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-size: 19px;
+  margin: 0 20px;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+  padding: 10px 12px;
+}
+
+footer .social-link a:hover {
+  color: var(--brading-color);
+  background: transparent;
+}
+
+.logo {
   max-height: 80px;
 }
 @media (max-width: 900px) {
@@ -191,7 +229,4 @@ line-height: 14px;
     margin-left: 0;
     width: 200px;
   }
-
- 
-  
 }
