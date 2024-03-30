@@ -173,6 +173,7 @@ footer .social-link a:hover {
 .logo {
   max-height: 80px;
 }
+
 @media (max-width: 900px) {
   h1 {
     font-size: 45px;
@@ -228,5 +229,23 @@ footer .social-link a:hover {
     margin-top: 30px;
     margin-left: 0;
     width: 200px;
+  }
+
+  footer .skills {
+    margin: auto 80px;
+  }
+
+  footer .skills .skills-icon {
+    padding: 0;
+  }
+
+  footer .skills .skills-icon img {
+    width: 40px;
+    margin: 0;
+  }
+
+  footer .social-link a {
+    font-size: 15px;
+    padding: 8px 10px;
   }
 }
