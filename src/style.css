@@ -1,13 +1,13 @@
 :root {
-  --brading-color: #0c0c3f;
+  --brading-color: #1B1A18;
   --primary-color: #dedbec;
-  --secundary-color: black;
-  --heading-font-family: "Playfair Display", serif;
-  --default-font-family: "Poppins", sans-serif;
+  --secundary-color: #EA7116;
+  --tertiary-color: white;
+  --title-font-family: "Satisfy", cursive;
+  --default-font-family: "Edu NSW ACT Foundation", cursive;
 }
 
 body {
-  background: var(--primary-color);
   font-family: var(--default-font-family);
 }
 
@@ -17,12 +17,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font-family);
+  font-family: var(--title-font-family);
   font-weight: bold;
 }
 
 h1 {
-  color: white;
+  color: var(--tertiary-color);
   font-size: 96px;
   line-height: 1.5;
 }
@@ -37,30 +37,52 @@ p {
   line-height: 30px;
 }
 
+.portfolio {
+  background: url("/images/wallpaper.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 .hero {
-  background: var(--secundary-color);
   text-align: center;
-  padding: 100px 20px;
+  padding: 50px 20px;
+  margin-left: 500px;
 }
 
 .hero p {
-  color: var(--primary-color);
-  font-size: 36px;
+  color: var(--tertiary-color);
+  font-size: 30px;
   font-weight: normal;
+}
+
+.hero .firts-name {
+  font-family: var(--title-font-family);
+  font-size: 60px;
   margin: 0;
+  padding: 0;
+}
+
+.hero h1 {
+  font-family: var(--title-font-family);
+  margin-top: -65px;
+  color: var(--tertiary-color);
+  font-size: 190px;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 .hero h2 {
-  color: var(--primary-color);
-  font-family: var(--heading-font-family);
+  color: var(--tertiary-color);
+  font-family: var(--default-font-family);
   font-weight: normal;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1.5;
+  margin-top: -60px;
 }
 
 .btn-branding {
   background-color: var(--brading-color);
-  color: var(--primary-color);
+  color: var(--secundary-color);
   border-radius: 4px;
   font-size: 18px;
   line-height: 27px;
@@ -68,8 +90,8 @@ p {
 }
 
 .btn-branding:hover {
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  border: 1px solid var(--brading-color);
+  color: var(--brading-color);
 }
 
 .btn-branding-outline {
@@ -132,16 +154,34 @@ p {
   line-height: 14px;
 }
 
+.nav-item a {
+  color: var(--tertiary-color);
+}
+
+.nav-item a:hover {
+  color: var(--secundary-color);
+}
+
+.nav-item .active {
+  color: var(--primary-color) !important;
+}
+
 footer {
   margin: 60px 0;
 }
 
 footer .skills-learned {
   text-align: center;
+  
+  margin-left: 500px;
+}
+
+footer .skills-learned  h4{
+  color: var(--tertiary-color);
 }
 
 footer .skills {
-  margin: auto 250px;
+  margin: auto 50px;
 }
 
 footer .skills .skills-icon img {
@@ -150,8 +190,14 @@ footer .skills .skills-icon img {
 }
 
 footer p {
+  color: var(--tertiary-color);
   text-align: center;
   font-size: 24px;
+}
+
+footer .social-link{
+  
+  margin-left: 500px;
 }
 
 footer .social-link a {
@@ -174,7 +220,7 @@ footer .social-link a:hover {
   max-height: 80px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 45px;
     line-height: 56px;
@@ -185,16 +231,25 @@ footer .social-link a:hover {
   }
 
   .hero {
-    padding: 30px 20px;
+    margin-left: 0;
+    padding: 30px 10px 20px;
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 25px;
     margin-bottom: 5px;
   }
 
+  .hero .firts-name {
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 120px;
+  }
+
   .hero h2 {
-    margin-top: 26px;
+    margin-top: -26px;
     font-size: 20px;
   }
 
@@ -231,6 +286,113 @@ footer .social-link a:hover {
     width: 200px;
   }
 
+  .nav-item {
+    padding: 5px 30px;
+  }
+  
+  footer{
+    margin: 10px 0;
+  }
+  
+  footer .skills {
+    margin: auto 80px;
+  }
+
+  footer .skills .skills-icon {
+    padding: 0;
+  }
+
+  footer .skills .skills-icon img {
+    width: 40px;
+    margin: 0;
+  }
+
+  footer .social-link a {
+    font-size: 15px;
+    padding: 8px 10px;
+  }
+}
+
+@media (min-width:600px ) and (max-width: 900px){
+   h1 {
+    font-size: 45px;
+    line-height: 56px;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .hero {
+    margin-left: 0;
+    padding: 30px 10px 20px;
+  }
+
+  .hero p {
+    font-size: 45px;
+    margin-bottom: 15px;
+  }
+
+  .hero .firts-name {
+    font-size: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 160px;
+    margin-top: -80px;
+  }
+
+  .hero h2 {
+    margin-top: -46px;
+    font-size: 35px;
+  }
+
+  .btn-branding {
+    font-size: 30px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
+
+  .content {
+    text-align: center;
+    padding: 0;
+  }
+
+  .content {
+    margin: 5px 0;
+    padding: 10px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 10px !important;
+  }
+
+  .content p {
+    font-size: 15px;
+    margin-bottom: 30px !important;
+  }
+
+  .img-logo {
+    float: none;
+    margin-top: 30px;
+    margin-left: 0;
+    width: 200px;
+  }
+
+  .nav-item {
+    padding: 5px 30px;
+  }
+  
+  footer{
+    margin: 10px 0;
+  }
+  
   footer .skills {
     margin: auto 80px;
   }
