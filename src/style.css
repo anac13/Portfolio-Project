@@ -167,10 +167,22 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 
+.about nav a {
+  color: var(--secundary-color);
+}
+
 nav a:hover,
 nav li.active a {
   background: var(--brading-color);
   color: var(--secundary-color);
+  padding: 10px 10px;
+  border-radius: 50%;
+}
+
+.about nav a:hover,
+nav li.active a {
+  background: var(--secundary-color);
+  color: var(--brading-color);
   padding: 10px 10px;
   border-radius: 50%;
 }
