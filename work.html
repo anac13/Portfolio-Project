@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script
@@ -46,12 +46,12 @@
   </head>
   <body class="portfolio-details">
     <div class="container">
-      <nav class="d-flex justify-content-between ">
-        <a href="" >
-          <img src="/images/logo.png" alt="" class="logo"/>
+      <nav class="d-flex justify-content-between">
+        <a href="">
+          <img src="/images/logo.png" alt="" class="logo" />
         </a>
         <ul>
-          <li >
+          <li>
             <a href="/index.html"> Home</a>
           </li>
           <li>
@@ -68,72 +68,93 @@
     </div>
     <div class="content-container container">
       <div class="content">
-        <h1 class="mb-5">Take a look at what I've been working on!</h1>
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <img
-              src="/images/yogurt.png"
-              alt="Yogurt app"
-              class="img-fluid mb-3 rounded"
-            />
-            <h3 class="text-center m-0">Yogurt Project</h3>
-            <p class="text-center text-muted">Built with HTML and CSS</p>
-          </div>
-          <div class="col-md-6 mb-4">
+        <h1 class="mb-5">My Projects</h1>
+        <div class="row mb-5 work rounded">
+          <div class="col work-image d-none d-lg-block">
             <img
               src="/images/weather.png"
               alt="Weather app"
-              class="img-fluid mb-3 rounded"
+              class="img-fluid"
             />
-            <h3 class="text-center m-0">Weather Project</h3>
-            <p class="text-center text-muted">
-              Built with HTML, CSS and JavaScript
-            </p>
           </div>
-          <div class="col-md-6 mb-4">
-            <img
-              src="/images/dictionary.png"
-              alt="Dictionary app"
-              class="img-fluid mb-3 rounded"
-            />
-            <h3 class="text-center m-0">Dictionary Project</h3>
-            <p class="text-center text-muted">
-              Built with HTML, CSS with React
-            </p>
+          <div class="col work-details">
+            <div class="project-description">
+              <h3 class="text-center">Weather App</h3>
+              <p class="text-center text-muted">
+                Built with HTML, CSS, JS and SheCodes Weather API. The code is
+                open-sourced on
+                <a
+                  href="https://github.com/anac13/WeatherApplication-project"
+                  target="_blank"
+                  >GitHub</a
+                >
+                and hosted on Netlify
+              </p>
+              <a
+                href="https://shecodes-weather-project-app.netlify.app/"
+                target="_blank"
+                class="btn btn-branding-outline"
+                >View detail project</a
+              >
+            </div>
           </div>
-          <div class="col-md-6 mb-4">
+        </div>
+        <div class="row mb-5 work rounded">
+          <div class="col work-details">
+            <div class="project-description">
+              <h3 class="text-center">Page about Paraguay</h3>
+              <p class="text-center text-muted">
+                Built with HTML, CSS and JS. The code is open-sourced on
+                <a
+                  href="https://github.com/anac13/Basic-SheCodes-final-project"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </p>
+              <a
+                href="https://www.shecodes.io/cohorts/shecodes-basics-89018628-cecd-46a0-a228-de0c300b01bc/projects/2000734?_gl=1*16luigr*_gcl_au*Mjg4MzEzMzUwLjE3MDgzNDU2NDcuMTAxMDY0NDI3OS4xNzA4OTcwODY5LjE3MDg5NzExMzc."
+                target="_blank"
+                class="btn btn-branding-outline"
+                >View detail project</a
+              >
+            </div>
+          </div>
+          <div class="col work-image d-none d-lg-block">
             <img
-              src="/images/translation.png"
-              alt="Translation app"
-              class="img-fluid mb-3 rounded"
+              src="/images/paraguay.jpg"
+              alt="Page about Paraguay"
+              class="img-fluid rounded-5 m-2"
             />
-            <h3 class="text-center m-0">Translation Project</h3>
-            <p class="text-center text-muted">
-              Built with HTML, CSS with React
-            </p>
           </div>
         </div>
       </div>
-      <footer>
-        <h4 class="mb-4 mt-5">My social networks</h4>
-        <div class="social-link mb-5 text-center">
+    </div>
+    <footer>
+      <div class="row mt-3 d-flex justify-content-between">
+        <div class="col-3">
+          <img src="/images/logo-white.png" alt="" class="logo" />
+        </div>
+        <div class="col-3 icon">
           <a
             href="https://www.instagram.com/annx_93?igsh=MXRqeG03aTd2NXA2Mg=="
             target="_blank"
           >
-            <i class="fa-brands fa-instagram fa-bounce"></i
+            <i class="fa-brands fa-instagram fa-shake"></i
           ></a>
           <a href="https://github.com/anac13" target="_blank"
-            ><i class="fa-brands fa-github fa-bounce"></i
+            ><i class="fa-brands fa-github fa-shake"></i
           ></a>
           <a
             href="https://www.linkedin.com/in/ana-ca%C3%B1ete-815892280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin fa-bounce"></i
+            <i class="fa-brands fa-linkedin fa-shake"></i
           ></a>
         </div>
-      </footer>
-    </div>
+        <div class="col-3">
+          <p>© 2024 Ana Cañete All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
