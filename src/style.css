@@ -1,7 +1,7 @@
 :root {
   --brading-color: #1b1a18;
   --primary-color: #dedbec;
-  --secundary-color: #ea7116;
+  --secundary-color: rgb(234, 113, 22);
   --tertiary-color: white;
   --title-font-family: "Satisfy", cursive;
   --default-font-family: "Edu NSW ACT Foundation", cursive;
@@ -32,6 +32,10 @@ h2 {
   font-size: 64px;
 }
 
+h4 {
+  color: var(--secundary-color);
+}
+
 p {
   font-weight: normal;
   font-size: 16px;
@@ -39,7 +43,7 @@ p {
 }
 
 a {
-  color: white;
+  color: var(--tertiary-color);
   text-decoration: underline;
 }
 
@@ -101,18 +105,17 @@ a {
 }
 
 .btn-branding-outline {
-  border: 1px solid var(--brading-color);
+  background: var(--secundary-color);
   border-radius: 4px;
-  color: var(--brading-color);
+  color: var(--tertiary-color);
   font-size: 18px;
   line-height: 27px;
-  padding: 15px 30px;
+  padding: 10px 30px;
 }
 
 .btn-branding-outline:hover {
-  background-color: var(--brading-color);
-  border: 1px solid var(--brading-color);
-  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  color: var(--secundary-color);
 }
 
 .project-description {
@@ -128,14 +131,15 @@ a {
 }
 
 .content h1 {
-  color: black;
+  color: var(--secundary-color);
   font-size: 65px;
   line-height: 80px;
 }
 
 .content h2 {
+  color: var(--secundary-color);
   font-size: 18px;
-  font-family: var(--default-font-family);
+  font-family: var(--default-font-);
 }
 
 .content h3 {
@@ -145,13 +149,12 @@ a {
 }
 
 .content p {
+  color: var(--tertiary-color);
   font-size: 14x;
 }
 
 .img-logo {
-  border-radius: 50%;
-  filter: drop-shadow(20px 7px 5px grey);
-  margin-top: 30x;
+  margin-top: -10px;
   width: 450px;
 }
 
@@ -167,7 +170,7 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 
-.about nav a {
+.portfolio-details nav a {
   color: var(--secundary-color);
 }
 
@@ -179,7 +182,7 @@ nav li.active a {
   border-radius: 50%;
 }
 
-.about nav a:hover,
+.portfolio-details nav a:hover,
 nav li.active a {
   background: var(--secundary-color);
   color: var(--brading-color);
@@ -198,44 +201,28 @@ nav li {
   line-height: 42px;
   padding: 0 70px;
 }
-
-footer {
-  margin: 60px 0;
-}
-
-footer .skills-learned {
+.skills-learned{
   text-align: center;
-
-  margin-left: 500px;
 }
 
-footer .skills-learned h4 {
-  color: var(--tertiary-color);
-}
-
-footer .skills {
-  margin: auto 50px;
-}
-
-footer .skills .skills-icon img {
-  margin: 10px;
+.skills .skills-icon img {
+  margin: 5px;
   width: 50px;
 }
 
-footer p {
-  color: var(--tertiary-color);
+footer {
+  background: var(--secundary-color);
   text-align: center;
-  font-size: 24px;
+  margin: 60px 0 0;
 }
 
-footer .social-link {
-  margin-left: 500px;
+footer h4{
+  color: var(--tertiary-color);
 }
 
 footer .social-link a {
-  background: var(--brading-color);
   border-radius: 50%;
-  color: var(--primary-color);
+  color: var(--secundary-color);
   font-size: 19px;
   margin: 0 20px;
   text-align: center;
@@ -245,7 +232,7 @@ footer .social-link a {
 
 footer .social-link a:hover {
   color: var(--brading-color);
-  background: transparent;
+  background: var(--secundary-color);
 }
 
 .logo {
