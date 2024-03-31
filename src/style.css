@@ -1,13 +1,14 @@
 :root {
-  --brading-color: #1B1A18;
+  --brading-color: #1b1a18;
   --primary-color: #dedbec;
-  --secundary-color: #EA7116;
+  --secundary-color: #ea7116;
   --tertiary-color: white;
   --title-font-family: "Satisfy", cursive;
   --default-font-family: "Edu NSW ACT Foundation", cursive;
 }
 
 body {
+  background: var(--brading-color);
   font-family: var(--default-font-family);
 }
 
@@ -35,6 +36,11 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
 }
 
 .portfolio {
@@ -149,21 +155,36 @@ p {
   width: 450px;
 }
 
-.nav-item {
-  padding: 0 30px;
-  line-height: 14px;
+nav {
+  text-align: center;
+  padding: 20px 0 0;
 }
 
-.nav-item a {
-  color: var(--tertiary-color);
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 22px;
+  transition: all 100ms ease-in-out;
 }
 
-.nav-item a:hover {
+nav a:hover,
+nav li.active a {
+  background: var(--brading-color);
   color: var(--secundary-color);
+  padding: 10px 10px;
+  border-radius: 50%;
 }
 
-.nav-item .active {
-  color: var(--primary-color) !important;
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  padding: 0 70px;
 }
 
 footer {
@@ -172,11 +193,11 @@ footer {
 
 footer .skills-learned {
   text-align: center;
-  
+
   margin-left: 500px;
 }
 
-footer .skills-learned  h4{
+footer .skills-learned h4 {
   color: var(--tertiary-color);
 }
 
@@ -195,8 +216,7 @@ footer p {
   font-size: 24px;
 }
 
-footer .social-link{
-  
+footer .social-link {
   margin-left: 500px;
 }
 
@@ -217,7 +237,8 @@ footer .social-link a:hover {
 }
 
 .logo {
-  max-height: 80px;
+  max-height: 70px;
+  margin-top: -15px;
 }
 
 @media (max-width: 600px) {
@@ -243,7 +264,7 @@ footer .social-link a:hover {
   .hero .firts-name {
     margin-bottom: 20px;
   }
-  
+
   .hero h1 {
     font-size: 120px;
   }
@@ -286,14 +307,22 @@ footer .social-link a:hover {
     width: 200px;
   }
 
-  .nav-item {
-    padding: 5px 30px;
+  nav {
+    padding: 5px;
   }
-  
-  footer{
+
+  nav a {
+    font-size: 18px;
+  }
+
+  nav li {
+    padding: 0 5px;
+  }
+
+  footer {
     margin: 10px 0;
   }
-  
+
   footer .skills {
     margin: auto 80px;
   }
@@ -313,8 +342,8 @@ footer .social-link a:hover {
   }
 }
 
-@media (min-width:600px ) and (max-width: 900px){
-   h1 {
+@media (min-width: 600px) and (max-width: 900px) {
+  h1 {
     font-size: 45px;
     line-height: 56px;
   }
@@ -324,6 +353,7 @@ footer .social-link a:hover {
   }
 
   .hero {
+    margin-top: 30px;
     margin-left: 0;
     padding: 30px 10px 20px;
   }
@@ -334,12 +364,12 @@ footer .social-link a:hover {
   }
 
   .hero .firts-name {
-    font-size: 100px;
+    font-size: 120px;
     margin-bottom: 20px;
   }
-  
+
   .hero h1 {
-    font-size: 160px;
+    font-size: 180px;
     margin-top: -80px;
   }
 
@@ -385,14 +415,10 @@ footer .social-link a:hover {
     width: 200px;
   }
 
-  .nav-item {
-    padding: 5px 30px;
-  }
-  
-  footer{
+  footer {
     margin: 10px 0;
   }
-  
+
   footer .skills {
     margin: auto 80px;
   }
