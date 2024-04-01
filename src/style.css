@@ -180,7 +180,7 @@ nav a {
   color: var(--secundary-color);
 }
 
-nav a:hover,
+nav li a:hover,
 nav li.active a {
   background: var(--tertiary-color);
   color: var(--secundary-color);
@@ -188,7 +188,7 @@ nav li.active a {
   border-radius: 50%;
 }
 
-.portfolio-details nav a:hover,
+.portfolio-details nav li a:hover,
 nav li.active a {
   background: var(--secundary-color);
   color: var(--tertiary-color);
